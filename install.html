@@ -1,0 +1,28 @@
+<script>
+function getMobileOperatingSystem() {
+  var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+  if( userAgent.match( /iPad/i ) || userAgent.match( /iPhone/i ) || userAgent.match( /iPod/i ) )
+  {
+    return 'ios';
+
+  }
+  else if( userAgent.match( /Android/i ) )
+  {
+
+    return 'android';
+  }
+  else
+  {
+    return 'unknown';
+  }
+}
+var os = getMobileOperatingSystem();
+if(os == "android") {
+	window.location.replace("https://play.google.com/store/apps/details?id=info.powow.app&install-1");
+} else if (os == "ios") {
+	window.location.replace("https://itunes.apple.com/us/app/powow/id1129741823?ls=1&mt=8&install-1");
+} else {
+	window.location.replace("http://powow.info?install-1");
+}
+</script>
