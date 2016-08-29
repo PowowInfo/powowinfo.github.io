@@ -1,97 +1,187 @@
-<!doctype html>
-<html lang="">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="title" content="Powow">
+    <meta name="description"
+          content="Powow is Android / iOS app that helps everyone to communicate, discover and share about people, places and activities in their locality via conversations.">
+    <meta name="viewport" content="initial-scale=1, minimum-scale=1, width=device-width">
+    <meta content="IE=11;IE=Edge" http-equiv="X-UA-Compatible">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+
+    <meta itemprop="name" content="Powow">
+    <meta itemprop="description"
+          content="Powow helps everyone to communicate, discover and share about people, places and activities in their locality via conversations.">
+    <meta itemprop="image" content="http://powow.info/img/icon.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@PowowInfo">
+    <meta name="twitter:title" content="Powow">
+    <meta name="twitter:description"
+          content="Powow helps everyone to communicate, discover and share about people, places and activities in their locality via conversations.">
+    <meta name="twitter:image" content="http://powow.info/img/icon.png">
+    <meta name="twitter:url" content="http://powow.info/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Powow">
+    <meta property="og:description"
+          content="Powow helps everyone to communicate, discover and share about people, places and activities in their locality via conversations.">
+    <meta property="og:url" content="http://powow.info/">
+    <meta property="og:image" content="http://powow.info/img/icon.png">
+    <meta property="og:site_name" content="Powow">
+    <meta property="og:locale" content="en_US">
+
     <title>Powow - Belong everywhere!</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Powow helps everyone to communicate, discover and share about people, places and activities in their locality via conversations.">
-    <meta name="keywords" content="Powow, App, iOS, Android, Free, Chat, Social">
-
-    <meta property="og:title" content="Powow - Belong everywhere!">
-    <meta property="og:site_name" content="Powow - Belong everywhere!">
-    <meta property="og:url" content="http://powow.info">
-    <meta property="og:description" content="Powow helps everyone to communicate, discover and share about people, places and activities in their locality via conversations.">
-
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:creator" content="@PowowInfo" />
-    <meta name="twitter:site" content="@PowowInfo" />
-    <meta name="twitter:title" content="Powow - Belong everywhere!" />
-    <meta name="twitter:description" content="Powow helps everyone to communicate, discover and share about people, places and activities in their locality via conversations." />
-    <meta name="twitter:url" content="http://powow.info" />
-
     <link rel="shortcut icon" href="img/icon.png">
     <link rel="apple-touch-icon" href="index.html" sizes="120x120">
 
-    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Cabin:600,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="style.css" type='text/css'>
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-    <div class="announcement animated delayed fadeInDown">
-        <h3><a href="https://medium.com/powowinfo/introducing-powow-693036ca8c0f#.odh3hmz0g">Introducing Powow!</a></h3>
+<div class="navbar-fixed">
+    <nav class="blue-grey lighten-5" role="navigation">
+        <div class="nav-wrapper container">
+            <a id="logo-container" href="#" class="brand-logo">
+                <i class="toplogo"></i>
+            </a>
+
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <a href="https://play.google.com/store/apps/details?id=info.powow.app">
+                        <i class="material-icons">phone_android</i>
+                    </a>
+                </li>
+                &nbsp;
+                <li>
+                    <a href="https://itunes.apple.com/us/app/powow/id1129741823">
+                        <i class="material-icons">phone_iphone</i>
+                    </a>
+                </li>
+            </ul>
+
+            <ul id="nav-mobile" class="side-nav">
+                <li>
+                    <a href="https://play.google.com/store/apps/details?id=info.powow.app">
+                        <i class="material-icons">phone_android</i>
+                        &nbsp; Android
+                    </a>
+                </li>
+                <li>
+                    <a href="https://itunes.apple.com/us/app/powow/id1129741823">
+                        <i class="material-icons">phone_iphone</i>
+                        &nbsp; iOS
+                    </a>
+                </li>
+            </ul>
+            <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+</div>
+
+<div class="carousel carousel-slider" data-indicators="true">
+    <div class="carousel-fixed-item center">
+        <a class="btn waves-effect white grey-text darken-text-2" onclick="$('.carousel').carousel('next')">Next</a>
     </div>
-    <div class="container cf">
-        <div class="col col-1-2 left">
-            <div class="content" align="center">
-                <h1 style="display:inline-block">Powow</h1> <sup><i>(beta)</i></sup> <br><br>
-                <img src="img/icon.png"> <br>
-                <h4>Belong everywhere!</h4> <br>
-                <p>Powow helps everyone to communicate, discover and share about people, places and activities in their locality via conversations.</p>
-                <a href='https://play.google.com/store/apps/details?id=info.powow.app'>
-                    <img alt='Get it on Google Play' src='img/PlayStore.png'/>
+
+    <div class="carousel-item " href="#one!" style="background-color: #82fae5">
+        <img align="center" class="screenshots" src="img/Android_Screenshot_1.png">
+    </div>
+    <div class="carousel-item " href="#two!" style="background-color: #cf82f6">
+        <img class="screenshots" src="img/Android_Screenshot_2.png">
+    </div>
+    <div class="carousel-item" href="#three!" style="background-color: #fdbc5b">
+        <img class="screenshots" src="img/Android_Screenshot_3.png">
+    </div>
+    <div class="carousel-item" href="#four!" style="background-color: #fc9982">
+        <img class="screenshots" src="img/Android_Screenshot_4.png">
+    </div>
+</div>
+
+<div id="index-banner" class="app-container">
+    <div class="section">
+        <div class="container">
+
+            <h1 class="header center ">Powow</h1>
+            <h5 class="header center ">Belong everywhere!</h5>
+
+            <div class="row center store-logos">
+                <a href="https://play.google.com/store/apps/details?id=info.powow.app" id="download-button1">
+                    <!--class="btn-large waves-effect waves-light teal lighten-1" >-->
+                    <img src="img/PlayStore.png">
+                    <!--Google Play-->
                 </a>
-                <a href="https://itunes.apple.com/us/app/powow/id1129741823">
+                <a href="https://itunes.apple.com/us/app/powow/id1129741823" id="download-button2">
+                    <!--class="btn-large waves-effect waves-light teal lighten-1" > -->
                     <img src="img/AppStore.png">
+                    <!--App Store-->
                 </a>
             </div>
-            <div class="footer">
-                <div>
-                    <a class="facebook" href="https://facebook.com/PowowInfo">Facebook</a>
-                    <a class="twitter" href="https://twitter.com/PowowInfo">Twitter</a>
-                    <a class="linkedin" href="https://www.linkedin.com/company/powow">LinkedIn</a>
-                    <a class="blog" href="https://medium.com/PowowInfo">Blog</a>
-                    <a class="support" href="mailto:hey@powow.info">Support</a>
-                </div>
-                <br />
-                <div>
-                    <a class="privacy" href="privacy-policy.html">Privacy Policy</a>
-                    <a class="terms" href="terms-of-use.html">Terms of Use</a>
-                </div>
+
+        </div>
+    </div>
+</div>
+
+<footer class="page-footer cyan accent-4">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">About Us</h5>
+                <p class="grey-text text-lighten-4">At Powow, we are building mobile applications to connect everyone
+                    with people, places and activities in their vicinity in natural way of conversations. Powow intends
+                    to be decentralised, implicit, geo-located communication channel for localities.</p>
+
+            </div>
+            <div class="col l3 s12">
+                <h5 class="white-text">Policies</h5>
+                <ul>
+                    <li><a class="white-text" href="privacy-policy.html">Privacy Policy</a></li>
+                    <li><a class="white-text" href="terms-of-use.html">Terms of usage</a></li>
+                </ul>
+            </div>
+            <div class="col l3 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                    <li><a class="white-text" href="https://twitter.com/PowowInfo">Twitter</a></li>
+                    <li><a class="white-text" href="https://www.facebook.com/PowowInfo">Faebook</a></li>
+                    <li><a class="white-text" href="https://www.linkedin.com/company/powow">LinkedIn</a></li>
+                    <li><a class="white-text" href="https://medium.com/PowowInfo">Medium</a></li>
+                </ul>
             </div>
         </div>
-        <div class="col col-1-2 right">
-            <div class="screenshots" align="center">
-                <img class="screenshot-1" src="img/sc4_iphone6plus_silver_side2.png"/>
-                <img class="screenshot-2" src="img/sc2_iphone6plus_silver_side1.png"/>
-            </div>
-            <div class="footer">
-                <span class="align-center">
-                    &copy; 2016
-                    <a class="linkedin" href="https://www.linkedin.com/in/vermapratyush">Pratyush<span class="isMobile"> Verma</span></a>
-                    ,
-                    <a class="linkedin" href="https://www.linkedin.com/in/siteshshrivastava">Sitesh<span
-                        class="isMobile"> Shrivastava</span></a>
-                    </span>
-                </div>
-            </div>
+    </div>
+    <div class="footer-copyright center">
+        <div class="container">
+            &copy; 2016 Powow, By <a class="brown-text text-lighten-3" href="http://pratyushverma.in">Pratyush Verma</a>
+            & <a class="brown-text text-lighten-3" href="http://siteshshrivastava.com">Sitesh Shrivastava</a>
         </div>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-        <script>
-            (function (i, s, o, g, r, a, m) {
-                i['GoogleAnalyticsObject'] = r;
-                i[r] = i[r] || function () {
+    </div>
+</footer>
+
+
+<!--  Scripts-->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
+
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
                     (i[r].q = i[r].q || []).push(arguments)
                 }, i[r].l = 1 * new Date();
-                a = s.createElement(o),
+        a = s.createElement(o),
                 m = s.getElementsByTagName(o)[0];
-                a.async = 1;
-                a.src = g;
-                m.parentNode.insertBefore(a, m)
-            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-            ga('create', 'UA-80239421-1', 'auto');
-            ga('send', 'pageview');
-        </script>
-    </body>
-    </html>
+    ga('create', 'UA-80239421-1', 'auto');
+    ga('send', 'pageview');
+</script>
+
+</body>
+</html>
