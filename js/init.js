@@ -5,7 +5,8 @@
         $('.parallax').parallax();
         $('.carousel').carousel({
             full_width: true,
-            time_constant: 100
+            time_constant: 100,
+            autoplay: true
         });
 
     }); // end of document ready
